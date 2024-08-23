@@ -1,6 +1,7 @@
 //js code 
 let pokemon = getElementById("pokemonName")
 const Poke = getElementById("pokemon")
+const Img = getElementById("")
 function placeholder() {
 fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
       .then(res => {
@@ -10,6 +11,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
            } 
             res.json
       })
-      .then(data => )
+      .then(data => data.sprites.front_defalt )
       .catch(err => console.log('Error'))
 }
