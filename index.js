@@ -10,6 +10,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
            } 
             res.json
       })
-      .then(data => Poke.scr("data.sprites.front_defalt") )
+      .then(data => {Poke.scr("data.sprites.front_defalt") })
       .catch(err => console.log('Error'))
 }
