@@ -1,6 +1,19 @@
 <DOCTYPE html>
   <head>
-    <script scr"index.js"></script>
+    <script scr"index.js">let pokemon = document.getElementById("pokemonName")
+const Poke = document.getElementById("pokemon").toLowerCase.value
+function placeholder() {
+fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
+      .then(res => {
+           if (!res.ok){
+          throw new Error("Are you stupid");
+           
+           } 
+            res.json
+      })
+      .then(data => {Poke.scr("data.sprites.front_defalt") })
+      .catch(err => console.log('Error'))
+}</script>
     <html lang"en">
     <meta charset"utf-8">
     <title> pokemon finder </title>
