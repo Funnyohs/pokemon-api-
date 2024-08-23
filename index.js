@@ -1,6 +1,7 @@
 //js code 
 let pokemon = ''
 const Poke = getElementById("pokemon")
+function () {
 fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
       .then(res => {
            if (!res.ok){
@@ -11,3 +12,4 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
       })
       .then(data => )
       .catch(err => console.log('Error'))
+}
