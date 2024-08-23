@@ -1,7 +1,7 @@
 //js code 
-let pokemon = ''
+let pokemon = getElementById("pokemonName")
 const Poke = getElementById("pokemon")
-function () {
+function placeholder() {
 fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
       .then(res => {
            if (!res.ok){
