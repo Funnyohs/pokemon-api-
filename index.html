@@ -1,19 +1,7 @@
 <DOCTYPE html>
   <head>
-<script scr="index.js"> let pokemon = document.getElementById("pokemonName")
-const Poke = document.getElementById("pokemon").value.toLowerCase()
-function T() {
-fetch("https://pokeapi.co/api/v2/pokemon/${Poke}")
-      .then(res => {
-           if (!res.ok){
-          throw new Error("Are you stupid");
-           
-           } 
-            res.json
-      })
-      .then(data => {Poke.scr("data.sprites.front_defalt") })
-      .catch(err => console.log('Error'))
-} </script>
+<script src="index.js">
+ </script>
     <html lang"en">
     <meta charset"utf-8">
     <title> pokemon finder </title>
@@ -21,8 +9,8 @@ fetch("https://pokeapi.co/api/v2/pokemon/${Poke}")
   <body>
     <h1> Who's that pokemon </h1>
     <input type= "text" id="pokemonName"placeholder="Enter the Pokemon name pls">
-    <button onclick"T()">Enter Button</button>
-    <img scr="" alt="That pokemon" id="pokemon">
+    <button onclick="T()">Enter Button</button>
+    <img src="" alt="That pokemon" id="pokemon">
    <!-this is a comment -> 
     
   </body>
