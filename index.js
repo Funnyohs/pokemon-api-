@@ -1,7 +1,7 @@
 //js code 
 let pokemon = document.getElementById("pokemonName")
 const Poke = document.getElementById("pokemon").value.toLowerCase()
-function placeholder() {
+function T() {
 fetch("https://pokeapi.co/api/v2/pokemon/${Poke}")
       .then(res => {
            if (!res.ok){
