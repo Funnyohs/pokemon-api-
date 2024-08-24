@@ -1,6 +1,6 @@
 //js code 
 let pokemon = document.getElementById("pokemonName")
-const Poke = document.getElementById("pokemon").toLowerCase.value
+const Poke = document.getElementById("pokemon").value.toLowerCase()
 function placeholder() {
 fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
       .then(res => {
