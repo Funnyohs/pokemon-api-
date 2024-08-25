@@ -9,8 +9,8 @@ let enterValue = enter.value;
           throw new Error("Are you stupid");
            
            } 
-            res.json()
+           return res.json()
       })
-      .then(data => {let image = data; poke.src = data.sprites.front_default})
+      .then(data => {let image = data; img.src = data.sprites.front_default})
       .catch(err => console.log('Error'))
 }
