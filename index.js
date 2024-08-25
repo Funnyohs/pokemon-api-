@@ -11,6 +11,6 @@ function T() {
            } 
            return res.json()
       })
-      .then(data => {let image = data; img.src = data.sprites.front_default})
+      .then(data => { img.src = data.sprites.front_default})
       .catch(err => console.log('Error'))
 }
