@@ -9,7 +9,7 @@ function value() {
       console.log(enter.value)
 }
 function T() {
-let enterValue = enter.value;      
+let enterValue = enter.value.toLowerCase();      
       fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
