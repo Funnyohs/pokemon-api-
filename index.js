@@ -11,6 +11,6 @@ function T() {
            } 
            return res.json()
       })
-      .then(data => { img.src = data.sprites.front_default})
+      .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play();})
       .catch(err => console.log('Error'))
 }
