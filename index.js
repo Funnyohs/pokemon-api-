@@ -3,8 +3,13 @@ let enter = document.getElementById("Enter")
 const img = document.getElementById("Img")
 console.log(enter)
 console.log(img)
+function value() {
+     console.log(enter)
+      console.log(img)
+      console.log(enter.value)
+}
 function T() {
-let enterValue = enter.value;
+let enterValue = enter.value;      
       fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
