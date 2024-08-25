@@ -1,15 +1,13 @@
 //js code 
-let enter = document.getElementById("Enter")
+let enterValue = document.getElementById("Enter").value.toLowerCase();
 const img = document.getElementById("Img")
-console.log(enter)
+console.log(enterValue)
 console.log(img)
 function value() {
-     console.log(enter)
-      console.log(img)
-      console.log(enter.value)
+     console.log(enterValue)
+     console.log(img)
 }
-function T() {
-let enterValue = enter.value.toLowerCase();      
+function T() {   
       fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
