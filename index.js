@@ -1,6 +1,8 @@
 //js code 
 let enter = document.getElementById("Enter")
 const img = document.getElementById("Img")
+console.log(enter)
+console.log(img)
 function T() {
 let enterValue = enter.value;
       fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
