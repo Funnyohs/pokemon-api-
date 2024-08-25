@@ -3,6 +3,7 @@
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const img = document.getElementById("Img")
+     let des = document.getElementById("description")
      fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
