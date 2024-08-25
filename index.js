@@ -2,7 +2,7 @@
 let pokemon = document.getElementById("pokemonName")
 const Poke = document.getElementById("pokemon")
 function T() {
-const pokeValue = Poke.value
+let pokeValue = Poke.value;
       fetch(`https://pokeapi.co/api/v2/pokemon/${pokeValue}`)
       .then(res => {
            if (!res.ok){
@@ -11,6 +11,6 @@ const pokeValue = Poke.value
            } 
             res.json()
       })
-      .then(data => {Poke.scr("data.sprites.front_defalt") })
+      .then(data => {let image = data;               })
       .catch(err => console.log('Error'))
 }
