@@ -14,4 +14,13 @@ function T() {
       })
  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); })
       .catch(err => console.log('Error'))
-}
+fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
+ .then(res => {
+      if (!res.ok){
+           throw new Error("Are you stupid");
+      }
+      return red.json()
+ })
+     .then( data => { des = data.form_descriptions.0})
+           .ctach(err => console.log("Error"))
+                  }
