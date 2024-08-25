@@ -1,4 +1,5 @@
 //js code 
+//This code is to fetch() the pokemon sprite data
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const img = document.getElementById("Img")
