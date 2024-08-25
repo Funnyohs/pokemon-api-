@@ -1,9 +1,8 @@
 h1 {
-  font-size : 32px;
-  
+  font-size : 128px;
 }
 img {
-  width : 32px;
-  height : 48px;
+  width : 64px;
+  height : 96px;
   display: none;
 }
