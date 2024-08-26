@@ -22,5 +22,5 @@ fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
       return res.json()
  })
      .then( data => { des = data.form_descriptions[0]})
-           .ctach(err => console.log("Error"))
+           .catch(err => console.log("Error"))
                   }
