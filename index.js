@@ -19,8 +19,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
       if (!res.ok){
            throw new Error("Are you stupid");
       }
-      return red.json()
+      return res.json()
  })
-     .then( data => { des = data.form_descriptions})
+     .then( data => { des = data.form_descriptions[0]})
            .ctach(err => console.log("Error"))
                   }
