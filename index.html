@@ -8,18 +8,50 @@
     <link href="index.css" rel="stylesheet">
   </head>
   <body>
+ <div>   
     <h1> Who's that pokemon </h1>
     <input type= "text" id="Enter"placeholder="Enter the Pokemon name pls">
     <button onclick="T()">Enter Button</button>
     <br>
     <img src="" alt="That pokemon" id="Img">
-    <fieldset>
+  <div style="text-align:left;">
+    <div> 
+  <label for="HP">HP:</label>
+    <meter id="HP" min="0" max="255" value="0" ></meter>
+  </div>
+       <br>
+    <div>
+    <label for="attack">Attack:</label>
+    <meter id="attack" min="0" max="255" value="0" ></meter>
+  </div>
+   <br>
+    <div>
+    <label for="defense">Denfense:</label>
+    <meter id="denfense" min="0" max="255" value="0" ></meter>
+  </div>
+   <br>
+    <div>  
+    <label for="SpAtk">Sp.Atk:</label>
+    <meter id="SpAtk" min="0" max="255" value="0" ></meter>
+  </div>
+    <br>
+    <div>
+    <label for="SpDef">Sp.Def:</label>
+    <meter id="speed" min="0" max="255" value="0"></meter>
+  </div>
+    <br>
+    <div>
+    <label for="total">Total:</label>
+      <meter min="0" max="1200" value="0" ></meter>
+  </div>
+  </div>
+    <div>
+   <fieldset width="96" height=""128>
        <legend>
     <strong>Pokemon description</strong>
     </legend>
+     <p id="description"> </p>
     </fieldset>
-    <legend>
-       <p id="description"> </p>
-    </legend>
+</div>
     <!--this is a comment--> 
   </body>
