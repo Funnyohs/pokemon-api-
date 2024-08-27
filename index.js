@@ -17,7 +17,7 @@ function T() {
            return res.json()
       })
  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); baseStats.forEach((item) => {
-      return blank(data.stats.[item].stat.name).value = data.stats.[item].base_stat
+      return blank(data.stats.[item].stat.name).value = data.stats[item].base_stat
  })  })
       .catch(err => console.log('Error'))
 fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
