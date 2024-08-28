@@ -3,7 +3,13 @@
  function blank (Element) {
          return document.getElementById(Element) 
      }
-     fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
+function T() {   
+     let enterValue = document.getElementById("Enter").value.toLowerCase();
+     const img = document.getElementById("Img")
+     let des = document.getElementById("description")
+     let baseStats = [0,1,2,3,4,5]
+     let totalMath = blank(total).value;
+fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
           throw new Error("Are you stupid");
@@ -11,12 +17,6 @@
            } 
            return res.json()
       })
-function T() {   
-     let enterValue = document.getElementById("Enter").value.toLowerCase();
-     const img = document.getElementById("Img")
-     let des = document.getElementById("description")
-     let baseStats = [0,1,2,3,4,5]
-     let totalMath = blank(total).value;
  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
