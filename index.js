@@ -8,7 +8,7 @@ function T() {
      const img = document.getElementById("Img")
      let des = document.getElementById("description")
      let baseStats = [0,1,2,3,4,5]
-     let totalMath = blank(total).value;
+     let totalMath = blank("total").value;
 fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
