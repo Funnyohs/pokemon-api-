@@ -37,9 +37,9 @@ function T() {
        // W.I.P sets the color of meter 
        if (meter.value < 65) {
        meter.style.color = "red"
-        }  else (meter.value <= 130) {
+        }  else if (meter.value <= 130) {
          meter.style.color = "yellow"
-        } else (meter.value > 131) {
+        } else {
          meter.style.color = "green"
         };
          
