@@ -10,7 +10,8 @@ function T() {
      let baseStats = [0,1,2,3,4,5]
      //please work or i blow up jk
      let totalMath = blank("total").value;
-fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
+     const meter = document.getElementByTag("meter")
+ fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
           throw new Error("Are you stupid");
@@ -31,4 +32,16 @@ fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
  })
      .then( data => { des.innerHTML = data.flavor_text_entries[6].flavor_text})
            .catch(err => console.log("Error"))
-                  }
+        switch(meter.value) {
+         case meter.value < 65: 
+          meter.style.color = red
+          break;
+         case meter.value <= 130 :
+          meter.style.color = yellow
+          break;
+         case meter.value > 131 :
+          meter.style.color = green
+          break;
+        }   
+         
+}
