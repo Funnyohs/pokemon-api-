@@ -10,7 +10,7 @@ function T() {
      let baseStats = [0,1,2,3,4,5]
      //please work or i blow up jk
      let totalMath = blank("total").value;
-     const meter = document.getElementByTag("meter")
+     const meter = document.querySelector("meter")
  fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
@@ -34,13 +34,13 @@ fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
            .catch(err => console.log("Error"))
         switch(meter.value) {
          case meter.value < 65: 
-          meter.style.color = red
+          meter.style.color = "red"
           break;
          case meter.value <= 130 :
-          meter.style.color = yellow
+          meter.style.color = "yellow"
           break;
          case meter.value > 131 :
-          meter.style.color = green
+          meter.style.color = "green"
           break;
         }   
          
