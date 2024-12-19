@@ -4,7 +4,9 @@ h1 {
 img {
   width : 128px;
   height : 128px;
-  border-style: hidden;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
   border-radius:3px;
   box-shadow: 8px 8px 7px 8px rgba(112, 92, 94, 0.2);
   padding:15px;
