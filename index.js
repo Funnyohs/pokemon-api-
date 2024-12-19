@@ -6,10 +6,10 @@
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const img = document.getElementById("Img")
-     let des = document.getElementById("description")
-     let baseStats = [0,1,2,3,4,5]
+     const des = document.getElementById("description")
+     const baseStats = [0,1,2,3,4,5]
      //please work or i blow up jk
-     let totalMath = blank("total").value;
+     const totalMath = blank("total").value;
      const meter = document.querySelector("meter")
  fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
@@ -20,7 +20,7 @@ function T() {
            return res.json()
       })
  //use to get audio, sprites and stats of the pokemon requested
-  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); blank(type).innerHTML= data.types.[0].type.name ;baseStats.forEach((item) => {
+  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
       .catch(err => console.log('Error'))
