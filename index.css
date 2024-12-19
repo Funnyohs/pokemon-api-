@@ -6,7 +6,7 @@ img {
   height : 128px;
   border-style: hidden;
   border-radius:3px;
-  box-shadow: 5px 8px 7px 10px rgba(112, 92, 94, 0.2);
+  box-shadow: 8px 8px 7px 10px rgba(112, 92, 94, 0.2);
   padding:15px;
   margin:10px;
 }
