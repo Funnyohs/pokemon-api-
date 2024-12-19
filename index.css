@@ -15,5 +15,6 @@ img {
   height:25%;
   border-style:solid;
   border-radius: 3px;
-  background-color: drakgray;
+  border-color: darkgray;
+  background-color: darkgray;
 }
