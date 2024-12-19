@@ -20,7 +20,7 @@ function T() {
            return res.json()
       })
  //use to get audio, sprites and stats of the pokemon requested
-  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); baseStats.forEach((item) => {
+  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play(); blank(type).innerHTML= data.types.[0].type.name ;baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
       .catch(err => console.log('Error'))
