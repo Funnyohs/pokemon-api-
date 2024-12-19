@@ -4,9 +4,9 @@ h1 {
 img {
   width : 128px;
   height : 128px;
-  border-style: solid;
+  border-style: hidden;
   border-radius:3px;
-  border-color: borosgain;
+  box-shadow: 5px 8px 7px 10px rgba(112, 92, 94, 0.2);
   padding:15px;
   margin:10px;
 }
