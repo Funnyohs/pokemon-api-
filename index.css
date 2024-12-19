@@ -10,3 +10,10 @@ img {
   padding:15px;
   margin:10px;
 }
+#stats{
+  width: 32%;
+  height:25%;
+  border-style:solid;
+  border-radius: 3px;
+  background-color: drakgray;
+}
