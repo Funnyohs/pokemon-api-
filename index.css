@@ -6,7 +6,7 @@ img {
   height : 128px;
   border-style: solid;
   border-radius:3px;
+  border-color: borosgain;
   padding:15px;
   margin:10px;
-  box-shadow: 5px 10px 7px 10px borosgain;
 }
