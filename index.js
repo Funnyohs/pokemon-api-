@@ -1,17 +1,23 @@
 //js code 
 //This code is to fetch() the pokemon sprite data,description,stats,and image *easter egg
- let name = "";
+ let normal = "";
+ let shiny = "";
+ const img = document.getElementById("Img");
+ const des = document.getElementById("description");
+ const meter = document.querySelector("meter");
+if (blank(shiny).checked == true ) {
+  img.src = shiny;
+ } else {
+  img.src = normal;
+ }
 function blank (Element) {
          return document.getElementById(Element) 
      }
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
-     const img = document.getElementById("Img")
-     const des = document.getElementById("description")
      const baseStats = [0,1,2,3,4,5]
      //please work or i blow up jk
      const totalMath = blank("total").value;
-     const meter = document.querySelector("meter")
  fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       .then(res => {
            if (!res.ok){
@@ -21,7 +27,7 @@ function T() {
            return res.json()
       })
  //use to get audio, sprites and stats of the pokemon requested
-  .then(data => { img.src = data.sprites.front_default; let name = ${enterValue};img.alt = name;let cry = new Audio(data.cries.latest); cry.play();baseStats.forEach((item) => {
+  .then(data => { normal = data.sprites.front_default;shiny = ;img.alt = ${enterValue};let cry = new Audio(data.cries.latest); cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
       .catch(err => console.log('Error'))
