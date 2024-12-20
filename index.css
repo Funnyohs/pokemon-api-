@@ -13,7 +13,7 @@ img {
   margin:10px;
 }
 #stats{
-  display:inline; 
+  display:inline-block; 
   width: 65%;
   height:25%;
   border-style:solid;
