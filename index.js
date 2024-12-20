@@ -1,6 +1,7 @@
 //js code 
 //This code is to fetch() the pokemon sprite data,description,stats,and image *easter egg
- function blank (Element) {
+ let name = "";
+function blank (Element) {
          return document.getElementById(Element) 
      }
 function T() {   
@@ -20,7 +21,7 @@ function T() {
            return res.json()
       })
  //use to get audio, sprites and stats of the pokemon requested
-  .then(data => { img.src = data.sprites.front_default; let cry = new Audio(data.cries.latest); cry.play();baseStats.forEach((item) => {
+  .then(data => { img.src = data.sprites.front_default; let name = ${enterValue};img.alt = name;let cry = new Audio(data.cries.latest); cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
       .catch(err => console.log('Error'))
