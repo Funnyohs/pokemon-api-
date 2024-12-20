@@ -1,5 +1,8 @@
 //js code 
 //This code is to fetch() the pokemon sprite data,description,stats,and image *easter egg
+ function blank (Element) {
+         return document.getElementById(Element) 
+     }
  let normal = "";
  let shiny = "";
  const img = document.getElementById("Img");
@@ -10,9 +13,6 @@ if (blank(shiny).checked == true ) {
  } else {
   img.src = normal;
  }
-function blank (Element) {
-         return document.getElementById(Element) 
-     }
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
