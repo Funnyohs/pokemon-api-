@@ -8,11 +8,6 @@
  const img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
-if (blank(shiny).checked == true ) {
-  img.src = shiny;
- } else {
-  img.src = normal;
- }
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
@@ -31,6 +26,7 @@ function T() {
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
+   img.src = blank("shiny").checked ? shiny : normal;
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
