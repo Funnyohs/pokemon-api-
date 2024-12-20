@@ -26,7 +26,7 @@ function T() {
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
-   img.src = blank("shiny").checked ? shiny : normal;
+   img.src = normal
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
