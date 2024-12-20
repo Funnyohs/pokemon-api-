@@ -32,8 +32,19 @@ function T() {
       }
       return res.json()
  })
-     .then( data => { for (let i = 0; i < 75; i++) {if(data.flavor_text_entries[i].language.name == "en"){ break; }des.innerHTML = data.flavor_text_entries[i].language.name;};})
-           .catch(err => console.log("Error"))
+     .then(data => {
+            // Find English description
+            let description = "";
+            for (let i = 0; i < data.flavor_text_entries.length; i++) {
+                if (data.flavor_text_entries[i].language.name === "en") {
+                    description = data.flavor_text_entries[i].flavor_text;
+                    break;
+                }
+            }
+
+            // Display description
+            des.innerHTML = description;
+        })
        // W.I.P sets the color of meter 
        if (meter.value < 65) {
        meter.style.color = "red"
