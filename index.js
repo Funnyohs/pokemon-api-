@@ -32,7 +32,7 @@ function T() {
       }
       return res.json()
  })
-     .then( data => { des.innerHTML = data.flavor_text_entries[6].flavor_text})
+     .then( data => { for (let i = 0; i < 75; i++) {if(data.flavor_text_entries[i].language.name == "en"){ break; }des.innerHTML = data.flavor_text_entries[i].language.name;};})
            .catch(err => console.log("Error"))
        // W.I.P sets the color of meter 
        if (meter.value < 65) {
