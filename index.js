@@ -8,33 +8,8 @@ function blank (Element) {
  let img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
-if (document.getElementById("shiny").checked) {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${blank("Img").alt}`)
-      .then(res => {
-           if (!res.ok){
-          throw new Error("Are you stupid");
-           
-           } 
-           return res.json()
-      })
  //use to get audio, sprites and stats of the pokemon requested
-  .then(data => {
-         blank("Img").src = data.sprites.front_shiny;   
-  })      
-}else {
-     fetch(`https://pokeapi.co/api/v2/pokemon/${blank("Img").alt}`)
-      .then(res => {
-           if (!res.ok){
-          throw new Error("Are you stupid");
-           
-           } 
-           return res.json()
-      })
- //use to get audio, sprites and stats of the pokemon requested
-  .then(data => {
-          blank("Img").src =  data.sprites.front_default;   
-  })
-};
+
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
