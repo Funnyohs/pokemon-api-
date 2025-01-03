@@ -23,12 +23,14 @@ function T() {
       })
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => { 
-   /*
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
-   */
    let cry = new Audio(data.cries.latest);
-   blank("Img").src = data.sprites.front_default;
+   if (blank("shiny").checked) {
+   blank("Img").src = shiny;
+   } else {
+   blank("Img").src = normal;
+   };
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
