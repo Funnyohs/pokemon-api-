@@ -30,7 +30,7 @@ function T() {
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
-      .catch(err => console.log('Error'))
+      .catch(err => console.log(err))
 // gets the description of pokemon requested
  fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
  .then(res => {
