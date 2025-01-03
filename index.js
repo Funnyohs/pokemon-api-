@@ -23,8 +23,8 @@ function T() {
       })
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => { 
-   let normal = data.sprites.front_default;
-   let shiny = data.sprites.front_shiny;
+   normal = data.sprites.front_default;
+   shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
    img.src = normal;
    cry.play();baseStats.forEach((item) => {
@@ -51,7 +51,7 @@ function T() {
 
          
         })
-       // W.I.P sets the color of meter 
+       /* W.I.P sets the color of meter 
        if (meter.value < 65) {
        meter.style.color = "red"
         }  else if (meter.value <= 130) {
@@ -59,5 +59,5 @@ function T() {
         } else {
          meter.style.color = "green"
         };
-         
+         */
 }
