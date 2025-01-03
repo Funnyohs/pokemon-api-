@@ -22,7 +22,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
     .then(data => {
        
    blank("Img").src = data.sprites.front_shiny;
-   } 
+   }) 
     }
       else {
 fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
