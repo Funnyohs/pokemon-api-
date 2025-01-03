@@ -8,7 +8,7 @@ function blank (Element) {
  let img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
-if (blank("shiny").checked) {
+if (document.getElementById("shiny").checked) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${blank("Img").alt}`)
       .then(res => {
            if (!res.ok){
