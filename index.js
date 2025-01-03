@@ -9,7 +9,35 @@ function blank (Element) {
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
  //use to get audio, sprites and stats of the pokemon requested
-
+function R() {
+     if (blank("shiny").checked) {
+fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
+      .then(res => {
+           if (!res.ok){
+          throw new Error("Are you stupid");
+           
+           } 
+           return res.json()
+      })
+    .then(data => {
+       
+   blank("Img").src = data.sprites.front_shiny;
+   } 
+    }
+      else {
+fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
+      .then(res => {
+           if (!res.ok){
+          throw new Error("Are you stupid");
+           
+           } 
+           return res.json()
+      })  
+    .then(data => {
+          blank("Img").src = data.sprites.front_default;     
+    }
+     }
+}
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
