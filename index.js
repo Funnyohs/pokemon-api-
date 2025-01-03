@@ -53,7 +53,7 @@ function T() {
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
-   blank("Img").alt = species.name;
+   blank("Img").alt = data.species.name;
    if (blank("shiny").checked) {
    blank("Img").src = shiny;
    } else {
