@@ -22,7 +22,7 @@ if (document.getElementById("shiny").checked) {
          blank("Img").src = data.sprites.front_shiny;   
   })      
 }else {
-     fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
+     fetch(`https://pokeapi.co/api/v2/pokemon/${blank("Img").alt}`)
       .then(res => {
            if (!res.ok){
           throw new Error("Are you stupid");
