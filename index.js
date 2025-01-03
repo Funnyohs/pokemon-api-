@@ -41,10 +41,10 @@ function T() {
  })
      .then(data => {
             // Find English description
-            let description;
+           
             for (let i = 0; i < data.flavor_text_entries.length; i++) {
                 if (data.flavor_text_entries[i].language.name === "en") {
-                    des.innerHTML = data.flavor_text_entries[i].flavor_text;
+                    blank(description).innerHTML = data.flavor_text_entries[i].flavor_text;
                     break;
                 }
             }
