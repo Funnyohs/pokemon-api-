@@ -28,7 +28,7 @@ function T() {
    shiny = data.sprites.front_shiny;
    */
    let cry = new Audio(data.cries.latest);
-   img.src = data.sprites.front_default;
+   blank("Img").src = data.sprites.front_default;
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
  })  })
