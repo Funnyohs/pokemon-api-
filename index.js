@@ -1,6 +1,6 @@
 //js code 
-//This code is to fetch() the pokemon sprite data,description,stats,and image *easter egg
- function blank (Element) {
+//This code is to fetch() the pokemon sprite data,description,stats,and image *easter egg ;)
+function blank (Element) {
          return document.getElementById(Element) 
      }
  let normal;
