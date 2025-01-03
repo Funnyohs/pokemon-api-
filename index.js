@@ -42,7 +42,7 @@ function T() {
      .then(data => {
             // Find English description
            
-            for (let i = 0; i < data.flavor_text_entries.length; i++) {
+            for (let i = 0; i < 50; i++) {
                 if (data.flavor_text_entries[i].language.name === "en") {
                     blank(description).innerHTML = data.flavor_text_entries[i].flavor_text;
                     break;
