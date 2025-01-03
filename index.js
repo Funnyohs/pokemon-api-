@@ -3,8 +3,8 @@
  function blank (Element) {
          return document.getElementById(Element) 
      }
- let normal = "";
- let shiny = "";
+ let normal;
+ let shiny;
  const img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
@@ -41,7 +41,7 @@ function T() {
  })
      .then(data => {
             // Find English description
-            let description = "";
+            let description;
             for (let i = 0; i < data.flavor_text_entries.length; i++) {
                 if (data.flavor_text_entries[i].language.name === "en") {
                     des.innerHTML = data.flavor_text_entries[i].flavor_text;
