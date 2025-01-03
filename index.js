@@ -44,13 +44,12 @@ function T() {
             let description = "";
             for (let i = 0; i < data.flavor_text_entries.length; i++) {
                 if (data.flavor_text_entries[i].language.name === "en") {
-                    description = data.flavor_text_entries[i].flavor_text;
+                    des.innerHTML = data.flavor_text_entries[i].flavor_text;
                     break;
                 }
             }
 
-            // Display description
-            des.innerHTML = description;
+         
         })
        // W.I.P sets the color of meter 
        if (meter.value < 65) {
