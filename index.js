@@ -23,8 +23,8 @@ function T() {
       })
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => { 
-   normal = data.sprites.front_default;
-   shiny = data.sprites.front_shiny;
+   let normal = data.sprites.front_default;
+   let shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
    img.src = normal;
    cry.play();baseStats.forEach((item) => {
