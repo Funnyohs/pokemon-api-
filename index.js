@@ -33,8 +33,8 @@ if (blank("shiny").checked) {
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => {
           blank("Img").src =  data.sprites.front_default;   
-  }
-})
+  })
+}
 function T() {   
      let enterValue = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
