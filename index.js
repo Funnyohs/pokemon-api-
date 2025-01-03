@@ -35,7 +35,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
       })  
     .then(data => {
           blank("Img").src = data.sprites.front_default;     
-    }
+    })
      }
 }
 function T() {   
