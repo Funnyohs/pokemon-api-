@@ -5,7 +5,7 @@
      }
  let normal;
  let shiny;
- const img = document.getElementById("Img");
+ let img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
 function T() {   
