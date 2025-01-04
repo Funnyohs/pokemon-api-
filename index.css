@@ -143,6 +143,7 @@ button:focus-visible {
   transition: all 0.3s;
   cursor: pointer;
   position: relative;
+  margin: 10px;
 }
 
 #shiny::after {
