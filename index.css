@@ -7,8 +7,8 @@ body {
   font-size: 30px;
 }
 meter{
-  position: absolute;
-  right: 4vw; 
+  position: sticky;
+  left: 100vw; 
   width: 20vw;
 }
 .inputs{
