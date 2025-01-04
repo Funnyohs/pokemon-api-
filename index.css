@@ -2,8 +2,8 @@ h1 {
   font-size : 72px;
 }
 img {
-  width : 8%;
-  height : 8%;
+  width : 128px;
+  height : 128px;
   border-style: solid;
   border-color: white;
   border-width: 2px;
@@ -11,6 +11,7 @@ img {
   box-shadow: 8px 8px 7px 8px rgba(112, 92, 94, 0.2);
   padding:15px;
   margin:10px;
+  display:inline-block; 
 }
 #stats{
   display:inline-block; 
