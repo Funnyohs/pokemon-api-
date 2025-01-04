@@ -25,7 +25,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
    }) 
     }
       else {
-fetch(`https://pokeapi.co/api/v2/pokemon/${enterValue}`)
+fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
       .then(res => {
            if (!res.ok){
           throw new Error("Are you stupid");
