@@ -99,8 +99,8 @@ button:focus-visible {
   border-style:solid;
   border-width: 2px;
   border-radius: 3px;
-  border-color: darkgray;
-  background-color: darkgray;
+  border-color: #d4d2d2;
+  background-color: #c3c0c0;
   padding:8px;
   margin:10px;
   box-shadow: 8px 8px 7px 8px rgba(112, 92, 94, 0.2);
