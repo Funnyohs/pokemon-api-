@@ -1,6 +1,10 @@
 h1 {
   font-size : 72px;
 }
+#action{
+  height: 25%;
+  width: 100%;
+}
 #Img {
   width : 35%;
   height : 25%;
