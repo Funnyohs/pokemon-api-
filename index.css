@@ -11,6 +11,12 @@ meter{
   right: 4vw; 
   width: 20vw;
 }
+#input{
+  display:flex;
+  gap: 10px;
+  margin: 20px;
+  font-size: 32px;
+}
 #action{
   height: 38vh;
   width: 98vw;
@@ -51,5 +57,8 @@ meter{
     max-width: 100%;
   }
 }
+
+
+
 
 
