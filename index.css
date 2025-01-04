@@ -11,6 +11,9 @@ meter{
   right: 4vw; 
   width: 20vw;
 }
+.inputs{
+  font-size: 28px;
+}
 #input{
   display:flex;
   gap: 10px;
