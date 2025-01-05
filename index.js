@@ -58,7 +58,7 @@ function T() {
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
    blank("Img").alt = data.species.name;
-   pokemonType = data.species.name;        
+   let pokemonTpe = data.species.name;        
    if (blank("shiny").checked) {
    blank("Img").src = shiny;
    } else {
@@ -69,7 +69,7 @@ function T() {
  })  })
       .catch(err => console.log(err))
 // gets the description of pokemon requested
- fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonType}`)
+ fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonTpe}`)
  .then(res => {
       if (!res.ok){
            throw new Error("Are you stupid");
