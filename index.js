@@ -67,28 +67,28 @@ function T() {
    };
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
- })  })
-      .catch(err => console.log(err))
+ })  
 // gets the description of pokemon requested
- fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonTpe}`)
- .then(res => {
-      if (!res.ok){
+ fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.species.name}`)
+ .then(resa => {
+      if (!resa.ok){
            throw new Error("Are you stupid");
       }
-      return res.json()
- })
-     .then(data => {
+      return resa.json()
+     .then(dat => {
             // Find English description
            
             for (let i = 0; i < 50; i++) {
-                if (data.flavor_text_entries[i].language.name === "en") {
-                    blank("bomb").innerHTML = data.flavor_text_entries[i].flavor_text;
+                if (dat.flavor_text_entries[i].language.name === "en") {
+                    blank("bomb").innerHTML = dat.flavor_text_entries[i].flavor_text;
                     break;
                 }
             }
 
          
         })
+           })
+      .catch(err => console.log(err))
        /* W.I.P sets the color of meter 
        if (meter.value < 65) {
        meter.style.color = "red"
