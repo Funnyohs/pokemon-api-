@@ -13,33 +13,11 @@ function blank (Element) {
  //use to get audio, sprites and stats of the pokemon requested
 function R() {
      if (blank("shiny").checked) {
-fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonType}`)
-      .then(res => {
-           if (!res.ok){
-          throw new Error("Are you stupid");
-           
-           } 
-           return res.json()
-      })
-    .then(data => {
-       
    blank("Img").src = shiny;
-   }) 
-    }
-      else {
-fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
-      .then(res => {
-           if (!res.ok){
-          throw new Error("Are you stupid");
-           
-           } 
-           return res.json()
-      })  
-    .then(data => {
+     }else {
           blank("Img").src = normal;     
-    })
+    }
      }
-}
 function T() {   
      pokemonType = document.getElementById("Enter").value.toLowerCase();
      const baseStats = [0,1,2,3,4,5]
