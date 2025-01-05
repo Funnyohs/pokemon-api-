@@ -33,7 +33,7 @@ function T() {
       })
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => { 
-   blank(type).innerHTML = data.types.[0].type.name + " " + data.types.[1].type.name;
+   blank(type).innerHTML = data.types[0].type.name + " " + data.types[1].type.name;
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
