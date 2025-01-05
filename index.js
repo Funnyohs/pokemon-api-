@@ -33,7 +33,6 @@ function T() {
       })
  //use to get audio, sprites and stats of the pokemon requested
   .then(data => { 
-   blank("type").innerHTML = data.types[0].type.name + " " + data.types[1].type.name;
    normal = data.sprites.front_default;
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
@@ -45,8 +44,12 @@ function T() {
    blank("Img").src = normal;
    };
    cry.play();baseStats.forEach((item) => {
-      return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat
- })  
+      return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat})
+  if(data.types.length === 1) {
+         blank(type).innerHTML = data.types[0].type.name;   
+  }else {
+         blank(type).innerHTML = data.types[0].type.name + "&sol" + data.types[1].type.name; 
+  }
 // gets the description of pokemon requested
  fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.species.name}`)
  .then(resa => {
