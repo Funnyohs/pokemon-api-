@@ -192,3 +192,17 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
 }
+let allPokemon = [];
+      fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
+      .then(res => {
+           if (!res.ok){
+          throw new Error("Are you stupid");
+           
+           } 
+           return res.json()
+      })
+    .then(data => {
+       data.results.forEach((element) => allPokemon.push(element.name));
+   }) 
+      autocomplete(document.getElementById("Enter"),allPokemon);
+        
