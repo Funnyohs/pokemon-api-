@@ -46,9 +46,9 @@ function T() {
    cry.play();baseStats.forEach((item) => {
       return blank(data.stats[item].stat.name).value = data.stats[item].base_stat; totalMath += data.stats[item].base_stat})
   if(data.types.length === 1) {
-         blank(type).innerHTML = data.types[0].type.name;   
+         blank("type").innerHTML = data.types[0].type.name;   
   }else {
-         blank(type).innerHTML = data.types[0].type.name + "&sol" + data.types[1].type.name; 
+         blank("type").innerHTML = data.types[0].type.name + "&sol" + data.types[1].type.name; 
   }
 // gets the description of pokemon requested
  fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.species.name}`)
