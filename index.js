@@ -22,7 +22,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonType}`)
       })
     .then(data => {
        
-   blank("Img").src = data.sprites.front_shiny;
+   blank("Img").src = shiny;
    }) 
     }
       else {
@@ -35,7 +35,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${document.getElementById("Img").alt}`)
            return res.json()
       })  
     .then(data => {
-          blank("Img").src = data.sprites.front_default;     
+          blank("Img").src = normal;     
     })
      }
 }
