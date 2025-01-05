@@ -67,7 +67,7 @@ function T() {
  })  })
       .catch(err => console.log(err))
 // gets the description of pokemon requested
- fetch(`https://pokeapi.co/api/v2/pokemon-species/${enterValue}`)
+ fetch(`https://pokeapi.co/api/v2/pokemon-species/${document.getElementById("Img").alt}`)
  .then(res => {
       if (!res.ok){
            throw new Error("Are you stupid");
