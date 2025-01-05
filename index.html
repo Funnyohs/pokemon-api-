@@ -71,7 +71,7 @@
 </div>
     <!--this is a comment--> 
     <script src="index.js">
-    let allPokemon = [];
+    
     function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
@@ -168,7 +168,8 @@
       closeAllLists(e.target);
   });
 }
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
+    let allPokemon = [];
+      fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
       .then(res => {
            if (!res.ok){
           throw new Error("Are you stupid");
