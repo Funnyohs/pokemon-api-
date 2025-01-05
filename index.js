@@ -6,6 +6,7 @@ function blank (Element) {
  let normal;
  let shiny;
  let pokemonType;
+ let pokemonTpe;
  let img = document.getElementById("Img");
  const des = document.getElementById("description");
  const meter = document.querySelector("meter");
@@ -58,7 +59,7 @@ function T() {
    shiny = data.sprites.front_shiny;
    let cry = new Audio(data.cries.latest);
    blank("Img").alt = data.species.name;
-   let pokemonTpe = data.species.name;        
+   pokemonTpe = data.species.name;        
    if (blank("shiny").checked) {
    blank("Img").src = shiny;
    } else {
