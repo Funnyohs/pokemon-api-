@@ -177,7 +177,7 @@
            return res.json()
       })
     .then(data => {
-       data.requests.forEach((element) => allpokemon.push(element.name));
+       data.requests.forEach((element) => allPokemon.push(element.name));
    }) 
       autocomplete(document.getElementById("Enter"),allPokemon);
         </script>
