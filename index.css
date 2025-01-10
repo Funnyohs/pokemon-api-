@@ -76,10 +76,6 @@ button:focus-visible {
   gap: 10px;
   margin: 25px;
   font-size: 32px;
-     border-radius: 30px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
 }
 #action{
   height: 38vh;
@@ -114,7 +110,12 @@ button:focus-visible {
   padding:8px;
   margin:10px;
   box-shadow: 8px 8px 7px 8px rgba(112, 92, 94, 0.2);
+       border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
 }
+
 /* checkbox settings 👇 */
 
 #shiny {
